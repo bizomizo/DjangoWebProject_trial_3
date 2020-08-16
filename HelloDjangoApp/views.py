@@ -17,6 +17,17 @@ def index(request):
         }
     )
 
+def about(request):
+    return render(
+        request,
+        "HelloDjangoApp/about.html",
+        {
+            'title' : "About HelloDjangoApp",
+            'content' : "Example app page for Django."
+        }
+    )
+
+
 """
 def index(request):
     return HttpResponse("Hello, Django!")
